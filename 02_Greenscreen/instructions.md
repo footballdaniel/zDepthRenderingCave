@@ -14,17 +14,12 @@
 
 
 ## Crop the video to body height for each frame
-
-keyframe animate: https://www.youtube.com/watch?v=GR-bEGYi8D4
-Product: https://youtu.be/ze-whcJwS2A
-
-
-- The subject should alwyas appear fully scaled in the frame, similar to [here](https://imgur.com/a/e7H2mB3).  
-
-## Synchronize video to event
-
-## Apply greenscreen to make background transparent
+- Since the video will be displayed in real size, the subject in the video has to be scaled to fit the frame size troughout the video, like [here](https://youtu.be/ze-whcJwS2A)
+- Suggestion is to use [Keyframe animation](https://www.youtube.com/watch?v=GR-bEGYi8D4). The subject is scaled to fit the vertical height. Then, the position is adjusted to make the subject fit vertically in the video. The horizontal component is not changed if possible
+- Note: If the recorded movements are strong in horizontal dimension (e.g. the subject walks out of the frame horizontally after scaling, the x-Component could also be rendered separately, analogously to the procedure in Chapter 03)
+- After Keyframing, the subject should alwyas appear fully scaled in the frame, similar to [here](https://imgur.com/a/e7H2mB3).  
 
 ## Install WEBM plugin
+- The Plugin needs to be downloaded and installed from [here](https://www.fnordware.com/WebM/). It is necessary to display the transparent background as an alpha channel in Unity5
 
 ## Export video
