@@ -22,7 +22,7 @@ Contains a complete workflow to capture Video in a greenscreen environment (Sens
 [Motive](https://optitrack.com/products/motive/)
 
 # Hardware Requirements
-GoproHero Camera (Or similar)
+GoproHero Camera (Or similar)  
 Optitrack
 
 # Tested with
