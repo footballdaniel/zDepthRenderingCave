@@ -15,6 +15,9 @@
 
 ## Crop the video to body height for each frame
 
+keyframe animate: https://www.youtube.com/watch?v=GR-bEGYi8D4
+Product: https://youtu.be/ze-whcJwS2A
+
 
 - The subject should alwyas appear fully scaled in the frame, similar to [here](https://imgur.com/a/e7H2mB3).  
 
