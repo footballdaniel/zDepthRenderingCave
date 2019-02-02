@@ -23,3 +23,8 @@
 - The Plugin needs to be downloaded and installed from [here](https://www.fnordware.com/WebM/). It is necessary to display the transparent background as an alpha channel in Unity5
 
 ## Export video
+- With the timeline selected, press Ctrl+M to bring up export window
+- On the right side, under "Format", the WebM should be accessible
+- For the preset, select "import preset" and chose WebMforUnity.epr (located under .../02_Greenscreen/01_Scripts)
+- Click on the blue text by "Output field" to chose where to save the video
+- Export the video
