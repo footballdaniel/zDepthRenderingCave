@@ -16,7 +16,7 @@ Contains a complete workflow to capture Video in a greenscreen environment (Sens
 
 # Software Requirements
 [Unity3D](https://unity3d.com/de)   
-[Matlab](https://ch.mathworks.com/de/products/matlab.html)  
+[Matlab](https://ch.mathworks.com/de/products/matlab.html), and the [BTK toolbox](http://biomechanical-toolkit.github.io/docs/Wrapping/Matlab/_tutorial.html)
 [PremierePro](https://www.adobe.com/PremierePro) (Trial version suffices)  
 [WebM](https://www.fnordware.com/WebM/) (Plugin for Premiere Pro Video Export)
 [Motive](https://optitrack.com/products/motive/)
