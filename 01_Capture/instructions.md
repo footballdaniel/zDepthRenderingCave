@@ -10,7 +10,7 @@ Link to example [Video](https://youtu.be/YpsTd9Q8pAo) of this step
 - Setup and Calibrate Optitrack through Motive Software
 - Use basic Markerset for full body capture
 
-- *Alternatively, but not scripted*
+- *Alternatively, but not scripted:*
 - Attach markerset of three or four markers on the highest head position of subject
 - Select markers in Optitrack and add as a rigid body
 
