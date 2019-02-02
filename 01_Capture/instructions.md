@@ -1,10 +1,11 @@
 # Instructions for capturing in Optitrack environment
-Link to example [Video](https://youtu.be/YpsTd9Q8pAo) of this step
+Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 
 ## Camera setup
 - Mount Gopro on stative. Lens should be on approximate eye-level for the future Unity environment. Recommended lens height: 1.65m
 - Tilt camera to cover the required ground area for all movement
 - At the back of the Lab, add a black tape to the wall at the height of the subject. This is a reference point, whether the subject is standing or not (see start capture for implications)
+- For optimal lighting, turn the light on by the main door, and turn off all the other lights. The condition should resemble the example [video](https://youtu.be/YpsTd9Q8pAo)
 
 ## Optitrack setup
 - Setup and Calibrate Optitrack through Motive Software
