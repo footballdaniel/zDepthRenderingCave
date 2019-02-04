@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Skript: Z_Depth_Analysis_refined takes .c3d input and transforms the
 % relevant part of the timeline to a .txt file.
-% Author: 		Daniel M�ller (email.daniel.ch@gmail.com)
+% Author: 		Daniel Mueller (email.daniel.ch@gmail.com)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Goal of the script:
