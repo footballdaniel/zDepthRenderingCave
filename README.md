@@ -137,11 +137,16 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 #### Setup CSV reader
 - The `CsvFileReader.cs` is to be downloaded from the repository and added as a component to the quad.
-- The file `Short_008.csv' provides exemplary values for the file reader. After adding the csv to the asset folder, drag the csv onto the `CsvFileReader` Component
+- The file `Short_008.csv` provides exemplary values for the file reader. After adding the csv to the asset folder, drag the csv onto the `CsvFileReader` Component
 - The `CsvFileReader` component requires specification about the object that needs to be moved. Drag the quad into the `Object to be moved`
 - Hit play
 
 
+### 99_Example
+- A unity package `zDepthExample.unitypackage` is accessible in the library. In any compatible Unity project, the package can be imported or dropped into the assets folder.
+- In the package, the Object `Quad` is used as a surface for a Webm-Video. In this package, two video players are attached to the `Quad`: The active player pulls an exemplary Video from the internet. If you have your own Webm Video on your drive, you can link it to the second (inactive) video player to display
+
+Contact: email.daniel.ch@gmail.com  http://www.science.football
 
 
 
