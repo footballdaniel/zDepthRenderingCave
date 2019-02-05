@@ -17,7 +17,7 @@ Contains a complete workflow to capture Video in a greenscreen environment (Sens
 [Unity3D](https://unity3d.com/de)   
 [Matlab](https://ch.mathworks.com/de/products/matlab.html), and the [BTK toolbox](http://biomechanical-toolkit.github.io/docs/Wrapping/Matlab/_tutorial.html)
 [PremierePro](https://www.adobe.com/PremierePro) (Trial version suffices)  
-[WebM](https://www.fnordware.com/WebM/) (Plugin for Premiere Pro Video Export)
+[WebM](https://www.fnordware.com/WebM/) (Plugin for Premiere Pro Video Export)  
 [Motive](https://optitrack.com/products/motive/)
 
 ### Hardware Requirements
@@ -37,7 +37,6 @@ Motive v1.7?
 # Step by step instructions
 
 ### Capture in Optitrack environment
-Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 
 #### Camera setup
 - Mount Gopro on stative. Lens should be on approximate eye-level for the future Unity environment. Recommended lens height: 1.65m
@@ -130,12 +129,18 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 - Create a `quad` matching the height of the subject. The ratio of width and height of the `quad` should be the same as the video output (e.g. 16:9 through 1920x1080)
 - Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the quad
 - Drag the video into the project folder. Clicking on the video, tick `Keep Alpha` and tick `Transcode`. In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit `apply` (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
+- After the video is imported, the now transparent video file has to be dragged onto the video component
 
 - Use `Create` to make a new material. Open the new material in the asset window and change the `shader`. Use the [CustomUnlitCutout.shader](https://gist.github.com/setchi/b5c9fd72c3cb5317dae44cb6f3eb7fef) from the repository.
 - Drag the transparent material onto the quad as a new component
 
+
 #### Setup CSV reader
-- The 
+- The `CsvFileReader.cs` is to be downloaded from the repository and added as a component to the quad.
+- The file `Short_008.csv' provides exemplary values for the file reader. After adding the csv to the asset folder, drag the csv onto the `CsvFileReader` Component
+- The `CsvFileReader` component requires specification about the object that needs to be moved. Drag the quad into the `Object to be moved`
+- Hit play
+
 
 
 
