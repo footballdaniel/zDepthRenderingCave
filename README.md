@@ -25,7 +25,7 @@ GoproHero Camera (Or similar)
 Optitrack
 
 ### Tested with
-Unity3D 2018.3f  
+Unity3D 2019.1.0b2  
 Matlab R2017b  
 PremierePro CC2018  
 WebM_v1.1  
@@ -98,7 +98,7 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 - Export the video
 
 #### Alternative to WEBM Premiere Pro plugin
-- Use the ffmpeg plugin [to decode a video with an alpha channel to become a webm file](https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video). The [ffmpeg library](https://github.com/FFmpeg/FFmpeg) is required for this.
+- Use the ffmpeg plugin [to decode a video with an alpha channel to become a webm file](https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video). The [ffmpeg library](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg) is required for this.
 - The export in Premiere Pro should [produce .png files](https://youtu.be/ukY2IGDXSAU)
 - The created image sequence can be processed with the ffmpeg library:
 ```
@@ -127,6 +127,10 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 
 ### 04_DepthFeed
+- To implement these steps you require a .csv file for Unity, a transparent Webm Video (VP8)
+- Create a plane matching the height of the subject. The ratio of width and height of the plane should be the same as the video output (e.g. 16:9 through 1920x1080)
+- Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the plane
+- Drag the video into the project folder. Clicking on the video, tick "Keep Alpha" and tick "Transcode". In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit "apply" (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
 
 
 
