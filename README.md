@@ -97,6 +97,13 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 - Click on the blue text by "Output field" to chose where to save the video
 - Export the video
 
+#### Alternative to WEBM Premiere Pro plugin
+- Use the ffmpeg plugin [to decode a video with an alpha channel to become a webm file](https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video). The [ffmpeg library](https://github.com/FFmpeg/FFmpeg) is required for this.
+- The export in Premiere Pro should [produce .png files](https://youtu.be/ukY2IGDXSAU)
+- The created image sequence can be processed with the ffmpeg library:
+```
+ffmpeg -i frames/%03d.png output.webm
+```
 
 
 ### 02_DepthExtraction: Instructions for extracting the depth data from .c3d file using Matlab
@@ -115,7 +122,12 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 
 #### Output
 Given the script runs smoothly, two figures are saved as .jpg and two z-depth files are produced and saved as .csv files. The plots should look approximately like the following:
-![drawingpicture](https://imgur.com/OMQZBYE)  
+![drawingpicture](https://serving.photos.photobox.com/840213009ef0356649343b5a5433b8e9a92c9eecf93493449d85af2925d7565e7154d199.jpg)  
+The graph on the left shows the raw data compared to the filtered data. The graph on the right shows the height of the head marker over time. The script identifies the events when the subject crouched (blue) as well as the first frame the participant approximately reached full body height after standing up (red)
+
+
+### 04_DepthFeed
+
 
 
 
