@@ -100,7 +100,7 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 #### Alternative to WEBM Premiere Pro plugin
 - Use the ffmpeg plugin [to decode a video with an alpha channel to become a webm file](https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video). The [ffmpeg library](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg) is required for this.
 - The export in Premiere Pro should [produce .png files](https://youtu.be/ukY2IGDXSAU)
-- The created image sequence can be processed with the ffmpeg library:  
+- The created image sequence can be [processed with the ffmpeg](https://stackoverflow.com/questions/34974258/convert-pngs-to-webm-video-with-transparency)library into a webm video file:  
 ``ffmpeg -i frames/%03d.png output.webm``
 
 
@@ -125,6 +125,7 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 
 ### 03_DepthFeed
+#### Setup scene and video
 - To implement these steps you require a .csv file for Unity, a transparent Webm Video (VP8)
 - Create a `quad` matching the height of the subject. The ratio of width and height of the `quad` should be the same as the video output (e.g. 16:9 through 1920x1080)
 - Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the quad
@@ -132,6 +133,11 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 - Use `Create` to make a new material. Open the new material in the asset window and change the `shader`. Use the [CustomUnlitCutout.shader](https://gist.github.com/setchi/b5c9fd72c3cb5317dae44cb6f3eb7fef) from the repository.
 - Drag the transparent material onto the quad as a new component
+
+#### Setup CSV reader
+- The 
+
+
 
 
 
