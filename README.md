@@ -1,6 +1,6 @@
 # zDepth_Render Description
 
-Z-Depth Rendering is a technique applied to videos to add an impression of depth as objects in the video move towards or away from the spectator
+Z-Depth Rendering is a technique applied to videos to add an impression of depth as objects (e.g. players) in the video move towards or away from the spectator.  
 Contains a complete workflow to capture Video in a greenscreen environment (Sensorimotor CAVE Bern), extract z-Depth-data and Render in Unity.  
 
 ![drawing](https://imgur.com/fuTRBxg.jpg)
