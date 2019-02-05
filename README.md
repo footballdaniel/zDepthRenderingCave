@@ -92,18 +92,16 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 
 #### Export video
 - With the timeline selected, press Ctrl+M to bring up export window
-- On the right side, under "Format", the WebM should be accessible
-- For the preset, select "import preset" and chose WebMforUnity.epr (located under .../02_Greenscreen/01_Scripts)
-- Click on the blue text by "Output field" to chose where to save the video
+- On the right side, under `Format`, the WebM should be accessible
+- For the preset, select `import preset` and chose WebMforUnity.epr (located under .../02_Greenscreen/01_Scripts)
+- Click on the blue text by `Output field` to chose where to save the video
 - Export the video
 
 #### Alternative to WEBM Premiere Pro plugin
 - Use the ffmpeg plugin [to decode a video with an alpha channel to become a webm file](https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video). The [ffmpeg library](https://github.com/adaptlearning/adapt_authoring/wiki/Installing-FFmpeg) is required for this.
 - The export in Premiere Pro should [produce .png files](https://youtu.be/ukY2IGDXSAU)
-- The created image sequence can be processed with the ffmpeg library:
-```
-ffmpeg -i frames/%03d.png output.webm
-```
+- The created image sequence can be processed with the ffmpeg library:  
+``ffmpeg -i frames/%03d.png output.webm``
 
 
 ### 02_DepthExtraction: Instructions for extracting the depth data from .c3d file using Matlab
@@ -116,9 +114,9 @@ ffmpeg -i frames/%03d.png output.webm
 - Add all the scripts from 03_DepthExtraction to a folder of choice and run the script
 
 #### Setting private parameters
-- In the main script (Skript_Z_Depth_Analysis_refined.m), the section "Necessary user input" needs to be specified
-- In the main script, the Input for the function "findStandingUpEvent()" contains a parameter for the height of the subject measured. I suggest to take a value 10 cm shorter than the height of the subject (e.g. the subject is 170 cm, use 160)
-- If the function "findStandingUpEvent()" doesnt yield meaningful outputs, there are two private parameters in the function itself that can be adjusted (tresh & gap)
+- In the main script (Skript_Z_Depth_Analysis_refined.m), the section `Necessary user input` needs to be specified
+- In the main script, the Input for the function `findStandingUpEvent()` contains a parameter for the height of the subject measured. I suggest to take a value 10 cm shorter than the height of the subject (e.g. the subject is 170 cm, use 160)
+- If the function `findStandingUpEvent()` doesnt yield meaningful outputs, there are two private parameters in the function itself that can be adjusted (tresh & gap)
 
 #### Output
 Given the script runs smoothly, two figures are saved as .jpg and two z-depth files are produced and saved as .csv files. The plots should look approximately like the following:
@@ -128,11 +126,13 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 ### 03_DepthFeed
 - To implement these steps you require a .csv file for Unity, a transparent Webm Video (VP8)
-- Create a plane matching the height of the subject. The ratio of width and height of the plane should be the same as the video output (e.g. 16:9 through 1920x1080)
-- Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the plane
-- Drag the video into the project folder. Clicking on the video, tick "Keep Alpha" and tick "Transcode". In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit "apply" (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
+- Create a `quad` matching the height of the subject. The ratio of width and height of the `quad` should be the same as the video output (e.g. 16:9 through 1920x1080)
+- Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the quad
+- Drag the video into the project folder. Clicking on the video, tick `Keep Alpha` and tick `Transcode`. In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit `apply` (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
 
-- Use "Create" to make a new material. Open the new material in the asset window and change the "shader". Use the "CustomUnlitCutout.shader" from the repository.
-- Drag the transparent material onto the plane as a new component
+- Use `Create` to make a new material. Open the new material in the asset window and change the `shader`. Use the [CustomUnlitCutout.shader](https://gist.github.com/setchi/b5c9fd72c3cb5317dae44cb6f3eb7fef) from the repository.
+- Drag the transparent material onto the quad as a new component
+
+
 
 
