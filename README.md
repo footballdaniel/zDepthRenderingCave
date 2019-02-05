@@ -8,9 +8,9 @@ Contains a complete workflow to capture Video in a greenscreen environment (Sens
 
 
 ### Pipeline
-02_Greenscreen: Description of Premiere Pro workflow to Unity. Goal: Add transparent alpha channel to video and export to Unity  
-03_DepthExtraction: Extract synchronized z-Data as txt-file  
-04_DepthFeed: Read txt-file in Unity and synchronize to game time  
+01_Greenscreen: Description of Premiere Pro workflow to Unity. Goal: Add transparent alpha channel to video and export to Unity  
+02_DepthExtraction: Extract synchronized z-Data as txt-file  
+03_DepthFeed: Read txt-file in Unity and synchronize to game time  
 99_Example: Source to game-ready example of an applied scenario  
 
 ### Software Requirements
@@ -126,12 +126,13 @@ Given the script runs smoothly, two figures are saved as .jpg and two z-depth fi
 The graph on the left shows the raw data compared to the filtered data. The graph on the right shows the height of the head marker over time. The script identifies the events when the subject crouched (blue) as well as the first frame the participant approximately reached full body height after standing up (red)
 
 
-### 04_DepthFeed
+### 03_DepthFeed
 - To implement these steps you require a .csv file for Unity, a transparent Webm Video (VP8)
 - Create a plane matching the height of the subject. The ratio of width and height of the plane should be the same as the video output (e.g. 16:9 through 1920x1080)
 - Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the plane
 - Drag the video into the project folder. Clicking on the video, tick "Keep Alpha" and tick "Transcode". In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit "apply" (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
 
-
+- Use "Create" to make a new material. Open the new material in the asset window and change the "shader". Use the "CustomUnlitCutout.shader" from the repository.
+- Drag the transparent material onto the plane as a new component
 
 
