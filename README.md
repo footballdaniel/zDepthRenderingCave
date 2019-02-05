@@ -115,6 +115,7 @@ Link to example [video](https://youtu.be/YpsTd9Q8pAo) of this step
 
 #### Output
 Given the script runs smoothly, two figures are saved as .jpg and two z-depth files are produced and saved as .csv files. The plots should look approximately like the following:
+![drawingpicture](https://imgur.com/OMQZBYE)
 
 
 
