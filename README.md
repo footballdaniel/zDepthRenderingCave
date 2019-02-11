@@ -141,6 +141,11 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 - The `CsvFileReader` component requires specification about the object that needs to be moved. Drag the quad into the `Object to be moved`
 - Hit play
 
+#### Make the video face the observer
+- the Script `LookAtCamera` can be added to the `quad`. Drag the `Camera` to the `Target` slot.
+- In case the video is rotated 180 degrees in the wrong direction, the `changeDîrection` component can be ticked to set the rotation to 0.
+- The result should look like [this](https://youtu.be/rOQ5o80O0I4)
+
 
 ### 99_Example
 - A unity package `zDepthExample.unitypackage` is accessible in the library. In any compatible Unity project, the package can be imported or dropped into the assets folder.
