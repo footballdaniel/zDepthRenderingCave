@@ -1,4 +1,4 @@
-# zDepth_Render Pipeline
+# zDepth_Render Description
 
 Z-Depth Rendering is a technique applied to videos to add an impression of depth as objects (e.g. players) in the video move towards or away from the spectator.  
 Contains a complete workflow to capture Video in a greenscreen environment (Sensorimotor CAVE Bern), extract z-Depth-data and Render in Unity.  
@@ -29,7 +29,7 @@ Unity3D 2019.1.0b2
 Matlab R2017b  
 PremierePro CC2018  
 WebM_v1.1  
-Motive v2.0.2
+Motive v1.7?
 
 
 
@@ -143,7 +143,7 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 #### Make the video face the observer
 - the Script `LookAtCamera` can be added to the `quad`. Drag the `Camera` to the `Target` slot.
-- In case the video is rotated 180 degrees in the wrong direction, the `changeDîrection` component can be ticked to set the rotation to 0.
+- In case the video is rotated 180 degrees in the wrong direction, the `changeDÃ®rection` component can be ticked to set the rotation to 0.
 - The result should look like [this](https://youtu.be/rOQ5o80O0I4)
 
 
