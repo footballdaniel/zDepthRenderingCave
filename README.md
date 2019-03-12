@@ -146,7 +146,7 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 
 #### Make the video face the observer
 - the Script `LookAtCamera` can be added to the `quad`. Drag the `Camera` to the `Target` slot.
-- In case the video is rotated 180 degrees in the wrong direction, the `changeDîrection` component can be ticked to set the rotation to 0.
+- In case the video is rotated 180 degrees in the wrong direction, the `changeDirection` component can be ticked to set the rotation to 0.
 - The result should look like [this](https://youtu.be/rOQ5o80O0I4)
 
 
