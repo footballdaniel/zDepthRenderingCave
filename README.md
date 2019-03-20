@@ -131,7 +131,7 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 - To implement these steps you require a .csv file for Unity, a transparent Webm Video (VP8)
 - Create a `quad` matching the height of the subject. The ratio of width and height of the `quad` should be the same as the video output (e.g. 16:9 through 1920x1080)
 - Create a [video player](https://unity3d.com/de/learn/tutorials/topics/graphics/videoplayer-component) and add it as a component to the quad
-- Drag the video into the project folder. Clicking on the video, tick `Keep Alpha` and tick `Transcode`. In the transcoding area, chose: Dimensions = Original; Codec: VP8; then hit `apply` (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
+- Drag the video into the project folder. Clicking on the video, tick `Keep Alpha` and tick `Transcode`. In the transcoding area, chose: Dimensions = Original; Codec: VP8; Import Audio: FALSE; then hit `apply` (see also [tutorial](https://forum.unity.com/threads/settings-for-importing-a-video-with-an-alpha-channel.457657/)
 - After the video is imported, the now transparent video file has to be dragged onto the video component
 
 - Use `Create` to make a new material. Open the new material in the asset window and change the `shader`. Use the [CustomUnlitCutout.shader](https://gist.github.com/setchi/b5c9fd72c3cb5317dae44cb6f3eb7fef) from the repository.
