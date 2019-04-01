@@ -154,7 +154,7 @@ The graph on the left shows the raw data compared to the filtered data. The grap
 - A unity package `zDepthExample.unitypackage` is accessible in the library. In any compatible Unity project, the package can be imported or dropped into the assets folder.
 - In the package, the Object `Quad` is used as a surface for a Webm-Video. In this package, two video players are attached to the `Quad`: The active player pulls an exemplary Video from the internet. If you have your own Webm Video on your drive, you can link it to the second (inactive) video player to display
 
-Contact: email.daniel.ch@gmail.com  http://www.science.football
+Contact: email.daniel.ch@gmail.com
 
 
 
